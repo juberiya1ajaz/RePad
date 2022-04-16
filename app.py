@@ -28,6 +28,10 @@ db = SQL("sqlite:///users.db")
 def index():    
     return render_template("index.html")
 
+@app.route('/ngo')
+def ngo():    
+    return render_template("ngo.html")
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in"""
