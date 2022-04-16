@@ -8,8 +8,8 @@ main .form-control
 
 }
 .form-control:focus {
-    border-color: #343a40b3;
-    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64,0.7);
+    border-color: #ffcccc;
+    box-shadow: 0 0 0 0.2rem rgb(255, 204, 204,0.8);
   }
  
   .div1{
@@ -44,10 +44,10 @@ main
 }
 #intr
 {
-  width:inherit;
-  
-  height:inherit;
+  width: 90px;
+  height: 70px;
 }
+
 a{color: rgb(32, 32, 32);}
 .footer {color:white !important;}
 body
@@ -55,11 +55,12 @@ body
   background-color:#fcdddd;
     font-size: 15px;
     background-repeat: no-repeat;
-   
+    background-size: 15% 25%;
     width:100%;
     height: 100%;
     background-attachment: fixed;
     background-position: center;
+    background-image:url("https://i.postimg.cc/5NYvn3QM/people.png");
    
 }
 .contact
@@ -102,7 +103,7 @@ border-radius:5px
 select{margin-left: 18px !important; }
 .nav-link{color:white}
 .nav-link:hover, .b , .b1:hover {color: white;
-background-color:rgb(73, 73, 73);
+background-color:rgb(252, 158, 158,0.6);
 border-radius:5px
 }
 @media(min-width: 300px){
