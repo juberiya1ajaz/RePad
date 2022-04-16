@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+{% block title %}
+Portfolio
+{% endblock %}
+
+{% block main %}
+{% if session.user_id %}
+
+{% else %}
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active " data-bs-interval="2000">
+      <img src="static\1.jpg" class="d-block w-100 " height=500 alt="...">
+      <div class="carousel-caption ">
+        <h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Welcome to RePAD</h1>
+        <p id="p"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  where NGOs and donor come together.</p>
+          <br>
+        <br><br>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="4000">
+      <img src="static\3.jpg" class="d-block w-100  " height=500 alt="...">
+      <div class="carousel-caption">
+        <h2 >Join today as a donor</h2>
+        <a  href="/register"><button type="button"
+          class="b"> Get Started </button></a></p>
+        <p id="p">Get started as an NGO</p>
+        <a  href="/contact"><button type="button"
+          class="b"> Contact Us </button></a></p>
+       <br> <br>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="static\2.jpg" class="d-block w-100" height=500 alt="...">
+      <div class="carousel-caption ">
+        <h2>What does research say?</h2>
+        <p>More than a third of girls in South Asia miss school during their periods, often because they 
+          lack access to menstrual health products and receive little or no education about menstruation before reaching puberty.
+          According to UNESCO and Whisper, 23 Million girls drop out of school due to lack of menstrual hygiene and awareness
+        </p>
+
+        <p>
+          Out of a total of ~40 crore menstruating women in India, 
+          less than 20% use sanitary pads. In urban areas, this number only goes up to 52%.
+          This indicates that nearly half of even urban-based women use unhygienic methods for period protection,
+           making them vulnerable to health issues.
+        </p>
+        <br><br><br><br>
+      </div>
+    </div>
+    
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endif %}
+{% endblock %}
