@@ -8,8 +8,8 @@ main .form-control
 
 }
 .form-control:focus {
-    border-color: #ffcccc;
-    box-shadow: 0 0 0 0.2rem rgb(255, 204, 204,0.8);
+    border-color: rgb(255, 172, 172);
+    box-shadow: 0 0 0 0.25rem rgb(255, 172, 172,0.8);
   }
  
   .div1{
@@ -79,6 +79,26 @@ body
 h3{text-align: left;}
 .about{font-size: 26px ;
   color: rgb(37, 37, 37,0.8);}
+/*CARD*/
+.card
+{
+  padding:20px;
+  background-color: #f5a3a3;
+}
+.card-title
+{
+  font-weight: bold;
+  font-style: italic;
+}
+.card-text,.card
+{
+  color: rgb(255, 255, 255,0.9);
+}
+
+.b1{
+  background-color: #fba6a6;
+  color:white
+}
 .contact
 {
     padding-top: 4px;
@@ -87,7 +107,7 @@ h3{text-align: left;}
     height: 100%;  
     padding: 40px;
     color: rgb(75, 75, 75);
-    border: 1px solid  #ffcbcb;
+    border: 1px solid  #fdbebe;
     margin: auto;
 }
 #p{font-size: 25px;
@@ -100,16 +120,53 @@ color:rgb(0, 0, 0)}
 h1{font-size: 90px !important;
   text-align: right !important;
   text-shadow: 2px 2px 8px;}
-h1,#p,h2{
-  color: rgb(0, 0, 0);
+h1,#p,h2, #p_car{
+  color: rgb(0, 0, 0,0.7);
 font-family: Georgia;
 }
-h3{
+#p_car{font-size:35px}
+h3 , #p_car{
   text-shadow: 2px 2px 8px;
+}
+/*TABLE*/
+table {
+  background-color: transparent;
+  margin-bottom: 1rem;
+  width: 100%;
+
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  vertical-align: middle;
+  font-family:Georgia;
+  border: 1px solid #dddddd;
+  text-transform: capitalize;
+}
+
+table th
+{
+  font-size:larger;
+}
+table:hover
+{
+  background-color: #fa9292;
+  
 }
 
 
-.b {
+tbody tr:nth-of-type(odd)
+{
+  background-color: #ffbcbc;
+  opacity:0.85;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+  opacity:0.85;
+}
+.b ,.b1 {
 position: relative;
 padding: 0.4em;
 border:0.5px;
@@ -119,12 +176,17 @@ border-radius:5px
   justify-content: center;
   align-items: center;
   height: 50px;}
-select{margin-left: 18px !important; }
-.nav-link{color:white}
-.nav-link:hover, .b , .b1:hover {color: white;
-background-color:rgb(252, 158, 158,0.6);
-border-radius:5px
+select{
+  margin-left: 18px !important; 
 }
+.nav-link{color:white}
+.nav-link:hover, .b 
+ {
+   color: white;
+   background-color:rgb(252, 158, 158,0.6);
+   border-radius:5px
+}
+.b1:hover{color:black}
 @media(min-width: 300px){
   .div1{
     max-width: 100%;
