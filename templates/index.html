@@ -1,15 +1,77 @@
 {% extends "layout.html" %}
 {% block title %}
-Portfolio
+home
 {% endblock %}
 
 {% block main %}
 {% if session.user_id %}
+<div class="container">
+  <div class="row m-4">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"> Menstruation</h5>
+          <p class="card-text">What happens with body during menstruation</p>
+          <a href="https://www.healthline.com/health/womens-health/stages-of-menstrual-cycle" class="btn b1">Click Here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Menstrual Health</h5>
+          <p class="card-text"> how to maintain your Menstrual health</p>
+          <a href="https://www.healthline.com/health/facts-statistics-menstruation" class="btn b1">Click Here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-4">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">How menstrual Cycle works?</h5>
+          <p class="card-text">Want to know How your body natural cycle works</p>
+          <a href="https://www.nhs.uk/conditions/periods/fertility-in-the-menstrual-cycle/#:~:text=The%20egg%20travels%20down%20the,around%2010%20to%2016%20days." class="btn b1">Click Here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Conversion of cotton clothes to pad </h5>
+          <p class="card-text"> How cotton clothes can be converted into Pads</p>
+          <a href="https://timesofindia.indiatimes.com/most-searched-products/health-and-fitness/health-care/reusable-sanitary-pads-cotton-and-fibre-pads-for-eco-friendly-periods/articleshow/77607526.cms" class="btn b1">Click Here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row m-4">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Goonj Foundation</h5>
+          <p class="card-text">Get to know about their Just a Piece of Cloth scheme </p>
+          <a href="https://goonj.org/the-journey-from-just-a-piece-of-cloth-to-my-pad/" class="btn b1">Click Here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Government schemes</h5>
+          <p class="card-text">Government schemes on menstruation health and hygiene </p>
+          <a href="https://nhm.gov.in/index1.php?lang=1&level=3&sublinkid=1021&lid=391" class="btn b1">Click Here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
 {% else %}
 <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active " data-bs-interval="2000">
+    <div class="carousel-item active " data-bs-interval="1500">
       <img src="static\1.jpg" class="d-block w-100 " height=500 alt="...">
       <div class="carousel-caption ">
         <h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Welcome to RePAD</h1>
@@ -21,13 +83,13 @@ Portfolio
     <div class="carousel-item" data-bs-interval="4000">
       <img src="static\3.jpg" class="d-block w-100  " height=500 alt="...">
       <div class="carousel-caption">
-        <h2 >Join today as a donor</h2>
+        <p id="p_car">Join today as a donor</p>
         <a  href="/register"><button type="button"
           class="b"> Get Started </button></a></p>
-        <p id="p">Get started as an NGO</p>
+        <p id="p_car">Get started as an NGO</p>
         <a  href="/contact"><button type="button"
           class="b"> Contact Us </button></a></p>
-       <br> <br>
+       
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="10000">
@@ -69,6 +131,7 @@ Portfolio
                     Many NGOs in India are recycling cotton clothes to make reusable and hygienic menstrual pads.
                     These cotton clothes will be provided by none other than the donor or user of this website.
                     <br>
+                    At RePad Get to know The basics Of menstruation cycle , menstrual health and all the upcoming schemes and facts about it.
                     These cotton clothes donated by you not only help in making pads but will also help in Sustainability.
                     <br>
                     So today, become a Hero and make environment-conscious choices with us.

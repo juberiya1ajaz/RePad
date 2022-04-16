@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+
+{% block title %}
+List Of NGOs
+{% endblock %}
+
+{% block main %}
+<form action="{{ url_for('ngo') }}">
+  <div id="printNgo">
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Contact</th>
+          <th>Address</th>
+          <th>Country of Residence</th>
+          <tr>
+            <td>Myna Mahila Foundation</td>
+            <td>+91 7208880031 +919326127527</td>
+            <td>Natwar Parekh Compound, Govandi West, Mumbai - 43</td>
+          <td>India </td>
+        </tr>
+        <tr>
+            <td>Goonj Foundation</td>
+            <td> 011-26972351, 41401216</td>
+            <td>J-93, Sarita Vihar, New Delhi-110076</td>
+            <td>India</td>
+          </tr>
+        <tr>
+            <td>SHUDDHI </td>
+            <td>NA</td>
+            <td>512A , IP Building, Barakhamba Road,
+                Connaught Place, New Delhi</td>
+          <td> India</td>
+        </tr>
+        <tr>
+            <td>The Amanda Trust</td>
+            <td> info@giveher5.org 022-30212509</td>
+            <td>NA</td>
+          <td>India</td>
+        </tr>
+        <tr>
+            <td>Eco Femme</td>
+            <td>(+91) 94871 79556</td>
+            <td>Auroshilpam (Old Inside India building)
+                Auroville 605111, Tamil Nadu</td>
+          <td> India</td>
+        </tr>
+        <tr>
+            <td>Aakar Innovatioons</td>
+            <td>(+91) 22 2757 0070</td>
+            <td>301, Chawla Complex
+
+                Sector 15, CBD Belapur
+                
+                Navi Mumbai - 400614</td>
+          <td> India</td>
+        </tr>
+        <tr>
+            <td>Karishmaa Care Foundation</td>
+            <td>+1 830-880-9303</td>
+            <td>Pune</td>
+          <td> India</td>
+        </tr><tr>
+            <td>Jagru Foundation</td>
+            <td>+91 83840 12345</td>
+            <td> Jagrut Compound, Azad Road, Vile Parle, Mumbai.</td>
+          <td> India</td>
+        </tr><tr>
+            <td>YEF</td>
+            <td>093116 98690</td>
+            <td>3426B, 3rd Floor, Mahindra Park, Rani Bagh, Pitam Pura, Delhi, 110034</td>
+          <td> India</td>
+        </tr><tr>
+            <td>Give India Org</td>
+            <td>NA</td>
+            <td>Unitech World Cyber Park, Tower A, Unit 406, 4th, Sector 39, Gurugram, Haryana 122001</td>
+          <td> India</td>
+        </tr><tr>
+            <td>Diya Foundation</td>
+            <td> 099104 46223</td>
+            <td>402, 4th floor, Ansal Majestic Tower, Behind PVR Cinema, Block G, AK Market, Vikaspuri, New Delhi, Delhi 110018</td>
+          <td> India</td>
+        </tr>
+      </table>
+    </div>
+    <iframe name="print_frame" width="0" height="0" frameborder="0" src="about:blank">
+    </iframe>
+    <button class="btn btn-lg b  p-9 m-9" onclick="printTable()">Print Table</button> 
+    </form>
+    
+
+
+{% endblock %}

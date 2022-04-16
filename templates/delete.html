@@ -7,7 +7,7 @@ delete
 {% block main %}
 <form action="{{ url_for('delete') }}" method="POST">
 
-    <fieldset>
+    
         <div class="form-group, mt-4 mb-3">
             <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username"
                 type="text" />
@@ -16,10 +16,9 @@ delete
             <input class="form-control" name="password" placeholder="Password" type="password" />
         </div>
 
-        <button class="btn btn-dark" style="margin-bottom:300px " type="submit" onclick="del()">Confirm
+        <button class="btn  b" style="margin-bottom:300px " type="submit" onclick="del()">Confirm
             Deletion</button>
-
-    </fieldset>
+ 
 </form>
 
 {% endblock %}
