@@ -52,7 +52,7 @@ a{color: rgb(32, 32, 32);}
 .footer {color:white !important;}
 body
 {
-  background-color:#fcdddd;
+  background-color:#ffd0d0;
     font-size: 15px;
     background-repeat: no-repeat;
     background-size: 15% 25%;
@@ -63,6 +63,22 @@ body
     background-image:url("https://i.postimg.cc/5NYvn3QM/people.png");
    
 }
+.jumbotron
+{
+   background-color: #fbc7c7;
+   margin: 15px;
+   padding: 40px;
+   font-family:Arial, Helvetica, sans-serif;
+   text-align: left !important;
+}
+
+.w3-animate-right
+{
+   animation-duration: 4s !important;
+}
+h3{text-align: left;}
+.about{font-size: 26px ;
+  color: rgb(37, 37, 37,0.8);}
 .contact
 {
     padding-top: 4px;
@@ -71,7 +87,7 @@ body
     height: 100%;  
     padding: 40px;
     color: rgb(75, 75, 75);
-    border: 1px solid  #fed9d9;
+    border: 1px solid  #ffcbcb;
     margin: auto;
 }
 #p{font-size: 25px;
@@ -81,12 +97,15 @@ h2{font-size: 40px;}
 p{font-size: 18px;font-family: Georgia;}
 h2,p{
 color:rgb(0, 0, 0)}
-h1{font-size: 90px;
+h1{font-size: 90px !important;
   text-align: right !important;
   text-shadow: 2px 2px 8px;}
 h1,#p,h2{
   color: rgb(0, 0, 0);
 font-family: Georgia;
+}
+h3{
+  text-shadow: 2px 2px 8px;
 }
 
 
